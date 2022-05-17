@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resource efficient image zoom jQuery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1>Resource efficient image zoom jQuery</h1>
+            <hr>
+            <p>Initialize the plugin:</p>
+            <textarea class="form-control mb-4" rows="3">$(document).ready(function () {
+    $(document).find('[data-toggle="image-zoom"]').modalZoom();
+});</textarea>
+            <p>Element sample:</p>
+            <textarea class="form-control mb-4" rows="8"><img
+                    src="https://via.placeholder.com/150/000/fff?Text=mmltools.com"
+                    data-toggle="image-zoom"
+                    data-src="https://via.placeholder.com/1920x1080/000/fff?Text=mmltools.com"
+                    data-caption="Test Caption"
+                    data-description="Test description"
+                    alt=""
+                    class="mr-3 image-zoom" /></textarea>
+            <p>Data elements:</p>
+            <ul>
+                <li><strong>src</strong> - Full or relative path to the thumbnail</li>
+                <li><strong>data-toggle="image-zoom"</strong> - Tells the script that this image can be zoomed</li>
+                <li><strong>data-src</strong> - Full or relative path to the big image</li>
+                <li><strong>data-caption</strong> - Title of the image, if not set, it won't show anything</li>
+                <li><strong>data-description</strong> - Description of the image, if not set, it won't show anything</li>
+            </ul>
+            <p>Click the image below:</p>
+            <img src="https://via.placeholder.com/150/000/fff?Text=mmltools.com" data-toggle="image-zoom" data-src="https://via.placeholder.com/1920x1080/000/fff?Text=mmltools.com" data-caption="Test Caption" data-description="Test description" alt="" class="mr-3 image-zoom" />
+        </div>
+    </div>
+</div>
+</body>
+<div style="position: fixed;bottom: 5%;right: 5%;padding: 1rem;background: #fff;border: 1px solid #e9ecef;border-radius: 0.35rem;color: #a9aeb3;box-shadow: 0 0 20px #e9ecef;">
+    <h5 style="margin-bottom: 1rem;padding-bottom: 1rem;text-align: center;">Support my work @ MMLTech</h5>
+    <div style="display: flex;align-items: center;">
+        <a style="margin-right:1rem;background: #d1e6fd;display: block;padding: 1rem;border-radius: 0.25rem;border: 1px solid #e9ecef;color: #000;font-weight: bold;" href="https://ko-fi.com/mmltech" target="_blank"><img src="https://storage.ko-fi.com/cdn/Kofi_Logo_Blue.svg" width="60px"/> Buy me a coffee</a>
+        <a style="background: #d1e6fd;display: block;padding: 1rem;border-radius: 0.25rem;border: 1px solid #e9ecef;color: #000;font-weight: bold;" href="https://obscountdown.com" target="_blank"><img src="https://streamcd.net/Assets/images/logo-white.png" width="60px" height="19px" /> My projects</a>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>
+

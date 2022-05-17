@@ -1,0 +1,15 @@
+.image-zoom-modal .modal-fit-content {
+  max-width: 70%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.image-zoom-modal .modal-fit-content .image-zoom-out {
+  max-width: 100%;
+  cursor: zoom-out;
+}
+
+.image-zoom {
+  cursor: zoom-in;
+}
+
+/*# sourceMappingURL=style.css.map */
